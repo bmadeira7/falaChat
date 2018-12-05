@@ -4,7 +4,7 @@ import MessageList from "./components/MessageList";
 import SendMessageForm from "./components/SendMessageForm";
 import TypingIndicator from "./components/TypingIndicator";
 import WhosOnlineList from "./components/WhosOnlineList";
-
+import NavBar from "./components/NavBar";
 class ChatScreen extends Component {
   constructor(props) {
     super(props);
@@ -81,17 +81,17 @@ class ChatScreen extends Component {
       container: {
         height: "100vh",
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
       },
       chatContainer: {
         display: "flex",
         flex: 1
       },
       whosOnlineListContainer: {
-        width: "14vw",
+        width: "16vw",
         flex: "none",
         padding: 20,
-        backgroundColor: "#2c303b",
+        backgroundColor: "#2E3238",
         color: "white"
       },
       chatListContainer: {
@@ -104,14 +104,17 @@ class ChatScreen extends Component {
 
     return (
       <div style={styles.container}>
+      <NavBar />
         <div style={styles.chatContainer}>
           <aside style={styles.whosOnlineListContainer}>
+          <h3>Online Users</h3>
+          <hr></hr>
             <WhosOnlineList
               currentUser={this.state.currentUser}
               users={this.state.currentRoom.users}
             />
           </aside>
-          <section style={styles.chatListContainer}>
+          <section className="section" style={styles.chatListContainer}>
             <MessageList
               messages={this.state.messages}
               style={styles.chatList}

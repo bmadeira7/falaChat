@@ -14,7 +14,7 @@ class WhosOnlineList extends Component {
           }
           return (
             <WhosOnlineListItem key={index} presenceState={user.presence.state}>
-              {user.name}
+              {user.name} 
             </WhosOnlineListItem>
           );
         })}
@@ -39,14 +39,19 @@ class WhosOnlineListItem extends Component {
         alignItems: "center",
         marginTop: 5,
         marginBottom: 5,
-        paddingTop: 2,
-        paddingBottom: 2
+        paddingTop: 4,
+        paddingBottom: 4,
+        borderBottom: "1px dotted white",
+        fontFamily: 'Dosis, sans-serif',
+        fontSize: "120%"
       },
       div: {
+          
         borderRadius: "50%",
         width: 11,
         height: 11,
-        marginRight: 10
+        marginRight: 10,
+        
       }
     };
     return (

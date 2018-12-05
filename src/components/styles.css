@@ -1,0 +1,54 @@
+/* LOGIN PAGE STYLES */
+.loginPage {
+    background-color: rgba(0, 0, 0, 0.356);
+    height: 90vh;
+    
+    font-size: 100%;
+    width: 80%;
+    margin: 2em auto 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+.title {
+    padding-top: 1vw;
+    
+}
+.fala{
+    font-size: 6em;
+    font-family: 'Dosis', sans-serif;
+   box-shadow: 2vw 1.5vw 1vw 0vw white;
+   background-color: rgb(91, 90, 156);
+   width: 80%;
+  margin-left: 7.5vw;
+}
+.loginCard {
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    opacity: .9;
+    font-family: 'Dosis', sans-serif;
+    
+}
+
+/* MESSAGING PAGE STYLES */
+
+.navbar{
+    height: 15vh;
+    margin-left: 16vw;
+}
+.navbar-brand{
+    font-family: 'Dosis', sans-serif;
+    font-size: 560%;
+    margin-left: 2vw;
+}
+.clock{
+   margin-left: 56%;
+   color: white;
+   /* border: .02vw solid white; */
+   padding: .7vw;
+   font-size: 120%
+}
+.section {
+    background-image: url("https://www.fosterforward.net/wp-content/uploads/718653_subtle-backgrounds-on-pinterest_1800x1200_h.jpg")
+}
