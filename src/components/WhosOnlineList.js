@@ -41,7 +41,10 @@ class WhosOnlineListItem extends Component {
         marginBottom: 5,
         paddingTop: 4,
         paddingBottom: 4,
-        borderBottom: "1px dotted white",
+        paddingLeft: 2,
+        paddingRight: 2,
+        border: "1px dotted white",
+        borderRadius: "5em",
         fontFamily: 'Dosis, sans-serif',
         fontSize: "120%"
       },
@@ -60,7 +63,7 @@ class WhosOnlineListItem extends Component {
           style={{
             ...styles.div,
             backgroundColor:
-              this.props.presenceState === "online" ? "#539eff" : "#414756"
+              this.props.presenceState === "online" ? "white" : "#414756"
           }}
         />
         {this.props.children}

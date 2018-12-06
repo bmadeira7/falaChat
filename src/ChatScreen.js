@@ -108,7 +108,7 @@ class ChatScreen extends Component {
         <div style={styles.chatContainer}>
           <aside style={styles.whosOnlineListContainer}>
           <h3>Online Users</h3>
-          <hr></hr>
+          
             <WhosOnlineList
               currentUser={this.state.currentUser}
               users={this.state.currentRoom.users}

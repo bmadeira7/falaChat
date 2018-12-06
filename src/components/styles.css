@@ -30,12 +30,16 @@
     font-family: 'Dosis', sans-serif;
     
 }
+body{
+    background-image: url("https://www.fosterforward.net/wp-content/uploads/718653_subtle-backgrounds-on-pinterest_1800x1200_h.jpg")
+}
 
 /* MESSAGING PAGE STYLES */
 
 .navbar{
     height: 15vh;
     margin-left: 16vw;
+    
 }
 .navbar-brand{
     font-family: 'Dosis', sans-serif;

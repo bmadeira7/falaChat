@@ -27,7 +27,7 @@ class SendMessageForm extends Component {
     const styles = {
       container: {
         padding: 10,
-        borderTop: "6px #4C758F solid",
+        borderTop: "6px rgb(91, 90, 156) double",
         marginBottom: 10
       },
       form: {
