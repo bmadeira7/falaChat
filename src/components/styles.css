@@ -2,7 +2,7 @@
 .loginPage {
     background-color: rgba(0, 0, 0, 0.356);
     height: 90vh;
-    
+    border-radius: 5em;
     font-size: 100%;
     width: 80%;
     margin: 2em auto 0;
@@ -20,6 +20,7 @@
    background-color: rgb(91, 90, 156);
    width: 80%;
   margin-left: 7.5vw;
+  border-radius: 16%;
 }
 .loginCard {
     width: 40vw;
@@ -28,7 +29,7 @@
     margin-top: 1vw;
     opacity: .9;
     font-family: 'Dosis', sans-serif;
-    
+    border-radius: 16%;
 }
 body{
     background-image: url("https://www.fosterforward.net/wp-content/uploads/718653_subtle-backgrounds-on-pinterest_1800x1200_h.jpg")

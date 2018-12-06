@@ -30,8 +30,12 @@ class MessagesList extends Component {
       senderUsername: {
         fontWeight: "bold"
       },
-      message: { fontSize: 15 }
+      message: { fontSize: 15,
+        backgroundColor: "#2E3238",
+        color: "white"
+    }
     };
+    
     return (
       <div
         style={{

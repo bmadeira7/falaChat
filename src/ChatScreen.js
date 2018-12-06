@@ -99,7 +99,8 @@ class ChatScreen extends Component {
         width: "85%",
         display: "flex",
         flexDirection: "column"
-      }
+      },
+      
     };
 
     return (
