@@ -36,6 +36,7 @@ class WhosOnlineListItem extends Component {
     const styles = {
       li: {
         display: "flex",
+        
         alignItems: "center",
         marginTop: 5,
         marginBottom: 5,
@@ -43,10 +44,12 @@ class WhosOnlineListItem extends Component {
         paddingBottom: 4,
         paddingLeft: 2,
         paddingRight: 2,
-        border: "1px dotted white",
+        border: "1px solid #6BE0E9",
         borderRadius: "5em",
         fontFamily: 'Dosis, sans-serif',
-        fontSize: "120%"
+        fontSize: "120%",
+        
+
       },
       div: {
           
@@ -63,10 +66,11 @@ class WhosOnlineListItem extends Component {
           style={{
             ...styles.div,
             backgroundColor:
-              this.props.presenceState === "online" ? "white" : "#414756"
+              this.props.presenceState === "online" ? "#6BE0E9" : "#414756"
           }}
         />
-        {this.props.children}
+        {this.props.children} 
+    
       </li>
     );
   }

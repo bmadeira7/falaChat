@@ -5,6 +5,12 @@ import SendMessageForm from "./components/SendMessageForm";
 import TypingIndicator from "./components/TypingIndicator";
 import WhosOnlineList from "./components/WhosOnlineList";
 import NavBar from "./components/NavBar";
+
+
+// ROOM ID ///////////////////
+let currentRoomId = "19377569";
+
+
 class ChatScreen extends Component {
   constructor(props) {
     super(props);
@@ -45,7 +51,8 @@ class ChatScreen extends Component {
       .then(currentUser => {
         this.setState({ currentUser });
         return currentUser.subscribeToRoom({
-          roomId: "19377274",
+
+          roomId: currentRoomId,
           messageLimit: 100,
           hooks: {
             onMessage: message => {
@@ -108,7 +115,8 @@ class ChatScreen extends Component {
       <NavBar />
         <div style={styles.chatContainer}>
           <aside style={styles.whosOnlineListContainer}>
-          <h3>Online Users</h3>
+          <h3 className="text-center onlineUsers">Online Users</h3>
+          <hr className="horizontalRuler"></hr>
           
             <WhosOnlineList
               currentUser={this.state.currentUser}

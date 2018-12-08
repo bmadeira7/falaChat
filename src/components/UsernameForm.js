@@ -12,9 +12,14 @@ class UsernameForm extends Component {
 
   onSubmit(e) {
     e.preventDefault();
-    this.props.onSubmit(this.state.username);
+    if (!this.state.username) {
+      return;
+    } else if (this.state.username[0] === " "){
+      return;
+    } else {
+      this.props.onSubmit(this.state.username);
+    }
   }
-
   onChange(e) {
     this.setState({ username: e.target.value });
   }
@@ -23,9 +28,13 @@ class UsernameForm extends Component {
     return (
       <div className="loginPage container">
         <div>
-       
           <h1 className="text-center title cover">
-            Welcome to<p className="fala"> <i className="far fa-paper-plane"></i>  FALA</p>- a messaging application
+            Welcome to
+            <p className="fala">
+              {" "}
+              <i className="far fa-paper-plane" /> FALA
+            </p>
+            - a messaging application
           </h1>
           <div className="card loginCard">
             <div className="card-body">
@@ -36,10 +45,14 @@ class UsernameForm extends Component {
               >
                 <input
                   type="text"
-                  placeholder="Your full name"
+                  placeholder="Enter your username"
                   onChange={this.onChange}
+                  className="userNameInput"
                 />
-                <input className="btn btn-secondary" type="submit" />
+                <input
+                  className="btn btn-outline-secondary ml-4"
+                  type="submit"
+                />
               </form>
             </div>
           </div>
