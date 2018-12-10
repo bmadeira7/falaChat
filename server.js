@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const Chatkit = require("@pusher/chatkit-server");
 
+const PORT = process.env.PORT || 3001;
+
 const app = express();
 
 const chatkit = new Chatkit.default({
@@ -37,7 +39,6 @@ app.post("/authenticate", (req, res) => {
   res.status(authData.status).send(authData.body);
 });
 
-const PORT = 3001;
 app.listen(PORT, err => {
   if (err) {
     console.error(err);
