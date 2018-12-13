@@ -34,7 +34,7 @@ class UsernameForm extends Component {
               {" "}
               <i className="far fa-paper-plane" /> FALA
             </p>
-            - a messaging application
+           messages
           </h1>
           <div className="card loginCard">
             <div className="card-body">
