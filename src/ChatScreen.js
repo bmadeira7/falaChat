@@ -42,7 +42,7 @@ class ChatScreen extends Component {
       instanceLocator: "v1:us1:30716a11-5345-4a7c-acb8-9e9eefa5092c",
       userId: this.props.currentUsername,
       tokenProvider: new Chatkit.TokenProvider({
-        url: "http://localhost:3001/authenticate"
+        url: "/authenticate"
       })
     });
 
@@ -107,17 +107,17 @@ class ChatScreen extends Component {
         display: "flex",
         flexDirection: "column"
       },
-      
+
     };
 
     return (
       <div style={styles.container}>
-      <NavBar />
+        <NavBar />
         <div style={styles.chatContainer}>
           <aside style={styles.whosOnlineListContainer}>
-          <h3 className="text-center onlineUsers">Online Users</h3>
-          <hr className="horizontalRuler"></hr>
-          
+            <h3 className="text-center onlineUsers">Online Users</h3>
+            <hr className="horizontalRuler"></hr>
+
             <WhosOnlineList
               currentUser={this.state.currentUser}
               users={this.state.currentRoom.users}
