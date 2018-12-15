@@ -24,6 +24,7 @@
     "start:prod": "node server.js",
     "start:dev": "concurrently \"node ./server.js\" \"npm run client\"",
     "build": "react-scripts build",
+    "heroku-postbuild": "npm run build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
