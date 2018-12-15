@@ -17,6 +17,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
+if (process.env.NODE_ENV === "production") {
+  // Serve react build files on Heroku
+  app.use(express.static("build"));
+}
+
 app.post("/users", (req, res) => {
   const { username } = req.body;
   chatkit
