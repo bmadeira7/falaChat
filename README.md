@@ -1,8 +1,8 @@
 # Fala - a direct messaging application built with React
 
-## ("Fala" translated to portuguese means "speak" or "to speak")
+# Deployed on heroku: https://shrouded-island-48843.herokuapp.com/
 
-Welcome to my messaging application. Deployed on heroku: https://shrouded-island-48843.herokuapp.com/
+Welcome to my messaging application.
 
 I built this application because I wanted to strengthen my React app building skills. I used Pusher Chatkit to handle websockets and most of the backend in node and express, and used Bootstrap to help with some of the front end. I also added a small NPM called "react-live-clock" to display the current time.
 
@@ -14,5 +14,10 @@ After clicking submit, they will be taken to the main chatpage, where they can b
 ![main-app](public/images/fala-chatPage.png)
 
 
+I used media queries to make this app mobile responsive, specifically for iphone and Samsung Galaxy phones. 
+
+## ("Fala" is portuguese for "speak" or "to speak"... a nod to my Brazilian heritage)
+
 Thank you for viewing my application.
+
 -Brian Madeira
