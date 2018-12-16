@@ -136,20 +136,20 @@ body {
   }
   /* MAIN chat page mobile responsive */
   .navbar-brand{
-    font-size: 60px;
+    font-size: 40px;
     padding-top: 0%;
   }
   .navbar{
     padding-right: 4px;
   }
   .clock{
-    font-size: 15px;
+    font-size: 14px;
     padding-top: 0%;
    margin-left:  -4%;
   }
   .logoutBtn{
     /* width: 20px; */
-    font-size: 8px;
+    font-size: 6px;
   }
 .aside {
     width: 25%;
