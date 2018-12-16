@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 
 
 // ROOM ID ///////////////////
-let currentRoomId = "19377569";
+let currentRoomId = "19378780";
 
 
 class ChatScreen extends Component {
