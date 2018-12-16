@@ -33,25 +33,18 @@ class SendMessageForm extends Component {
       form: {
         display: "flex"
       },
-      input: {
-        color: "inherit",
-        background: "none",
-        outline: "none",
-        border: "none",
-        flex: 1,
-        fontSize: 16
-      }
+      
     };
     return (
       <div style={styles.container}>
         <div>
           <form onSubmit={this.onSubmit} style={styles.form}>
             <input
+            className="messageInputForm"
               type="text"
               placeholder="Type a message here then press ENTER"
               onChange={this.onChange}
               value={this.state.text}
-              style={styles.input}
             />
           </form>
         </div>

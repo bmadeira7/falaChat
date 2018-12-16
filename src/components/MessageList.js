@@ -32,15 +32,8 @@ class MessagesList extends Component {
       },
       senderUsername: {
         fontWeight: "bold"
-      },
-      message: { fontSize: 15,
-        backgroundColor: "#353940",
-        // border: "2px solid rgb(118, 228, 236",
-        color: "white",
-        padding: "4px 8px",
-        borderRadius: "8px",
-        display: "inline"
-    }
+      }
+    
     };
     
     return (
@@ -56,7 +49,7 @@ class MessagesList extends Component {
               <div>
                 <span style={styles.senderUsername}>{message.senderId}</span>{" "}
               </div>
-              <p style={styles.message}>{message.text}</p>
+              <p className="eachMessage">{message.text}</p>
             </li>
           ))}
         </ul>

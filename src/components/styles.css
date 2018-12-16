@@ -77,10 +77,94 @@ body {
   margin-top: 2%;
 }
 
-.langDrop {
-    margin-left: 0%;
-    width: 10%;
+
+
+.aside{
+  
+    width: 13vw;
+    flex: none;
+    padding: 20;
+    background-color: #2E3238;
+    color: white;
+    
+  
 }
-.translateBtn {
-    margin-left: 2%;
+.messageInputForm{
+  
+    color: inherit;
+    background: none;
+    outline: none;
+    border: none;
+    flex: 1;
+    font-size: 16;
+  
 }
+.eachMessage{
+  
+    font-size: 15;
+    background-color: #353940;
+    /* border: 2px solid rgb(118, 228, 236; */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: inline;
+
+}
+/* MOBILE RESPONSIVENESS!!! */
+
+
+@media only screen and (max-width: 640px) {
+  /* login page mobile responsive */
+  .title{
+    padding-top: 9vw;
+  }
+  .fala{
+    font-size: 90px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .loginCard{
+    width: 240px;
+    margin-top: 40px;
+  }
+  input{
+    width: 100px;
+  }
+  .userNameInput{
+    font-size: 10px;
+  }
+  /* MAIN chat page mobile responsive */
+  .navbar-brand{
+    font-size: 60px;
+    padding-top: 0%;
+  }
+  .navbar{
+    padding-right: 4px;
+  }
+  .clock{
+    font-size: 15px;
+    padding-top: 0%;
+   margin-left:  -4%;
+  }
+  .logoutBtn{
+    /* width: 20px; */
+    font-size: 8px;
+  }
+.aside {
+    width: 25%;
+    padding: 5px;
+  }
+  .onlineUsers{
+    font-size: 18px;
+  }
+  ul{
+    font-size: 10px;
+  }
+.messageInputForm{
+    font-size: 10px;
+  }
+  .eachMessage{
+    font-size: 10px;
+  }
+} 

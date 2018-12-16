@@ -94,13 +94,7 @@ class ChatScreen extends Component {
         display: "flex",
         flex: 1
       },
-      whosOnlineListContainer: {
-        width: "16vw",
-        flex: "none",
-        padding: 20,
-        backgroundColor: "#2E3238",
-        color: "white"
-      },
+      
       chatListContainer: {
         padding: 20,
         width: "85%",
@@ -114,7 +108,7 @@ class ChatScreen extends Component {
       <div style={styles.container}>
         <NavBar />
         <div style={styles.chatContainer}>
-          <aside style={styles.whosOnlineListContainer}>
+          <aside className="aside">
             <h3 className="text-center onlineUsers">Online Users</h3>
             <hr className="horizontalRuler"></hr>
 
